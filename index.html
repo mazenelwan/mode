@@ -266,7 +266,7 @@
 <div class="code-overlay" id="codeOverlay">
   <h3>🔒 كود سري</h3>
   <p>في تاريخ بيننا… اكتبيه عشان تفتحي قلبي</p>
-  <input class="code-input" id="codeInput" placeholder="اكتبي تاريخ مميز لينا" maxlength="12"
+  <input class="code-input" id="codeInput" placeholder="اكتبي تاريخ مميز " maxlength="12"
     onkeydown="if(event.key==='Enter') checkCode()" inputmode="text">
   <div class="code-hint">تلميح: تاريخنا الخاص ✨</div>
   <div class="code-error" id="codeError">❌ مش ده… فكري أكتر 💭</div>
@@ -474,7 +474,7 @@ function initQuiz(){ if(quizInited)return; quizInited=true; renderQ(); }
 function renderQ(){
   const w=document.getElementById('quizWrap');
   if(qIdx>=quizData.length){
-    w.innerHTML='<div class="quiz-done">مبروكِ! عارفاني كويس 🎉<span>ده لأنكِ في قلبي… وأنا في قلبك 🤍</span></div>';
+    w.innerHTML='<div class="quiz-done">مبروكِ! عارفاني كويس 🎉<span>برافو يا اشطر بنوته في الدنيااا 🤍</span></div>';
     confetti(); return;
   }
   const q=quizData[qIdx];
@@ -520,4 +520,5 @@ document.addEventListener('keydown',function(e){
 document.getElementById('gate-page').style.display='flex';
 </script>
 </body>
+
 </html>
